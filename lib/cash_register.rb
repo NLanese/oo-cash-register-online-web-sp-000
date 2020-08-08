@@ -17,6 +17,8 @@ class CashRegister
   end
 
   def apply_discount
+    if (@discount == 0)
+      return "There is no discount to apply."
     discountDecimal = (@discount.to_f) * 0.01
     multiByThis = 1.0 - discountDecimal
     @total = @total.to_f * multiByThis
