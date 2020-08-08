@@ -8,9 +8,11 @@ class CashRegister
 
   attr_accessor :total, :discount :items
 
-def add_item(itemName, price, quantity = 1)
-  @previousTotal = @total
-  thisPrice = price * quantity
-  @total += thisPrice
-  items << itemName
+  def add_item(itemName, price, quantity = 1)
+    @previousTotal = @total 
+    thisPrice = price * quantity
+    @total += thisPrice
+    items << itemName
+  end
+
 end
