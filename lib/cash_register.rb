@@ -13,7 +13,11 @@ class CashRegister
     @previousTotal = @total
     thisPrice = price * quantity
     @total += thisPrice
-    @items << itemName
+    i = 0
+    while (i < quantity)
+      @items << itemName
+      i += 1
+    end
   end
 
   def apply_discount
