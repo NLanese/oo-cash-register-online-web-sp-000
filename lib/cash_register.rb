@@ -41,4 +41,6 @@ class CashRegister
     lastIndex = items.length - 1
     @items.delete_at(lastIndex)
     @total = previousTotal
+  end
+  
 end
