@@ -4,9 +4,10 @@ class CashRegister
     @previousTotal = 0
     @total = 0
     @discount = discount
+    items = []
   end
 
-  attr_accessor :total, :discount, :items
+  attr_accessor :total, :discount
 
   def add_item(itemName, price, quantity = 1)
     @previousTotal = @total
