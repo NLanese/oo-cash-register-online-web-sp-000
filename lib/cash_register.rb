@@ -42,5 +42,5 @@ class CashRegister
     @items.delete_at(lastIndex)
     @total = previousTotal
   end
-  
+
 end
