@@ -23,6 +23,9 @@ class CashRegister
     discountDecimal = (@discount.to_f) * 0.01
     multiByThis = 1.0 - discountDecimal
     @total = @total.to_f * multiByThis
+    if (@total % 1.0 == 0)
+      @total = @total.to_i
+    end
     return "After the discount, the total comes to #{@total}"
   end
 
