@@ -26,7 +26,7 @@ class CashRegister
     if (@total % 1.0 == 0)
       @total = @total.to_i
     end
-    return "After the discount, the total comes to #{@total}"
+    return "After the discount, the total comes to #{@total}."
   end
 
 end
