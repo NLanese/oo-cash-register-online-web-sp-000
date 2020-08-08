@@ -40,7 +40,7 @@ class CashRegister
   def void_last_transaction
     lastIndex = items.length - 1
     @items.delete_at(lastIndex)
-    @total = previousTotal
+    @total = @previousTotal
   end
 
 end
