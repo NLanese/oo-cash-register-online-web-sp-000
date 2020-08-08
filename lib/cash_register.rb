@@ -13,7 +13,7 @@ class CashRegister
     @previousTotal = @total
     thisPrice = price * quantity
     @total += thisPrice
-    items << itemName
+    @items << itemName
   end
 
 end
