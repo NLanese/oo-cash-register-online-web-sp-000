@@ -6,7 +6,7 @@ class CashRegister
     @discount = discount
   end
 
-  attr_accessor :total, :discount :items
+  attr_accessor :total, :discount, :items
 
   def add_item(itemName, price, quantity = 1)
     @previousTotal = @total
