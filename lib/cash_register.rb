@@ -4,7 +4,7 @@ class CashRegister
     @previousTotal = 0
     @total = 0
     @discount = discount
-    items = []
+    @items = []
   end
 
   attr_accessor :total, :discount
