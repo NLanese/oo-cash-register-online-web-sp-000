@@ -20,5 +20,4 @@ class CashRegister
     discountDecimal = (@discount.to_f) * 0.01
     multiByThis = 1.0 - discountDecimal
     @price = @price.to_f * multiByThis
-
 end
